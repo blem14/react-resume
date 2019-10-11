@@ -1,0 +1,42 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"VsCodeTaskButtons.tasks": [
+			{
+				"label": "start",
+				"task": "npm: start"
+			},
+			{
+				"label": "deploy",
+				"task": "npm: deploy"
+			},
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "npm: start",
+				"type": "npm",
+				"script": "start",
+				"problemMatcher": [],
+				"detail": "react-scripts start",
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				}
+			},
+			{
+				"label": "npm: deploy",
+				"type": "npm",
+				"script": "deploy",
+				"problemMatcher": [],
+				"detail": "gh-pages -b build -d build"
+			}
+		]
+	}
+}
