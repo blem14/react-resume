@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import logo from './assets/logo.svg';
 import './App.css';
+import Footer from './Footer.js';
+import { FaRegSmileWink } from 'react-icons/fa';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p className="App-phrase">I'm Commander Shepard, and this is my favourite page on the internet! <FaRegSmileWink /></p>
       </header>
+      <Footer />
     </div>
   );
 }

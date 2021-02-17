@@ -1,0 +1,23 @@
+.Footer{
+    background-color: #2a2a2a;
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    color: white;
+    vertical-align: middle;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Footer-link-icon {
+    size: 1em;
+    color: white;
+}
+.Footer-references{
+    text-align: left;
+}
+.Footer-powered-by{
+    text-align: right;
+}
